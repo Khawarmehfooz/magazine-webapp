@@ -120,6 +120,8 @@ a:active,a:focus {
         gap: 1rem;
         top: -500px;
         width: 100%;
+        background-color: white;
+        padding: 1rem 0;
     }
     .active{
         top:50px;
