@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+@font-face {
+  font-family: "spratcondensed_bold";
+  src: url("./fonts/sprat-condensedbold-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condensedbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondensed_light";
+  src: url("./fonts/sprat-condensedlight-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condensedlight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondensed_medium";
+  src: url("/fonts/sprat-condensedmedium-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condensedmedium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondensed_thin";
+  src: url("../fonts/sprat-condensedthin-webfont.woff2") format("woff2"),
+    url("../fonts/sprat-condensedthin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondesed_regular";
+  src: url("./fonts/sprat-condesedregular-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condesedregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondensed_bold";
+  src: url("./fonts/sprat-condensedbold-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condensedbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondensed_light";
+  src: url("./fonts/sprat-condensedlight-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condensedlight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondensed_medium";
+  src: url("./fonts/sprat-condensedmedium-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condensedmedium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondensed_thin";
+  src: url("./fonts/sprat-condensedthin-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condensedthin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "spratcondesed_regular";
+  src: url("./fonts/sprat-condesedregular-webfont.woff2") format("woff2"),
+    url("./fonts/sprat-condesedregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img,
+svg,
+picture {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "spratcondesed_regular";
+}
+p,
+a,
+li,
+span,
+label,
+button,
+input {
+  font-family: "Roboto", sans-serif;
+}
