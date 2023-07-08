@@ -54,7 +54,7 @@ export default {
         class="mySwiper trending__articles__grid">
             <swiper-slide class="trending__article">
                 <div class="trending__article__img">
-                    <img src="../assets/images/Meghan and Harry.jpeg" alt="">
+                    <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
                 </div>
                 <div class="trending__article__info">
                     <div class="trending__article__info__left">
@@ -71,7 +71,7 @@ export default {
             </swiper-slide>
             <swiper-slide class="trending__article">
                     <div class="trending__article__img">
-                        <img src="../assets/images/Meghan and Harry.jpeg" alt="">
+                        <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
                     </div>
                     <div class="trending__article__info">
                         <div class="trending__article__info__left">
@@ -89,7 +89,7 @@ export default {
             </swiper-slide>
             <swiper-slide class="trending__article">
                     <div class="trending__article__img">
-                        <img src="../assets/images/Meghan and Harry.jpeg" alt="">
+                        <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
                     </div>
                     <div class="trending__article__info">
                         <div class="trending__article__info__left">
@@ -106,7 +106,7 @@ export default {
             </swiper-slide>
             <swiper-slide class="trending__article">
                         <div class="trending__article__img">
-                            <img src="../assets/images/Meghan and Harry.jpeg" alt="">
+                            <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
                         </div>
                         <div class="trending__article__info">
                             <div class="trending__article__info__left">
