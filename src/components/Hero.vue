@@ -183,6 +183,27 @@ main{
     text-overflow: ellipsis;
     word-wrap: break-word;
 }
+@media only screen and (max-width:1200px){
+    .feature__post__title{
+        font-size: 2.3rem;
+    }
+    .col-2 .post__read__time, .col-3 .post__read__time{
+        display: none;
+    }
+
+
+}
+@media only screen and (max-width:900px){
+    .col-2 .post__details__left, .col-3 .post__details__left{
+        display: none;
+    }
+    .col-2 .author__name, .col-3 .author__name{
+        padding-left:45px ;
+    }
+    .col-2 .author__name::before, .col-3 .author__name::before{
+        left: 0;
+    }
+}
 @media only screen and (max-width:800px){
     main{
         grid-template-columns: repeat(2,1fr);
