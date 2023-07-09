@@ -19,6 +19,37 @@ export default {
             modules: [Navigation],
         };
     },
+    data(){
+        return{
+            TrendingPost: {
+                post1:{
+                    publishDate: "Feb 12",
+                    readTime: 5,
+                    postAuthor: "Elan Jhosh",
+                    postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
+                },
+                post2: {
+                    publishDate: "Feb 12",
+                    readTime: 5,
+                    postAuthor: "Elan Jhosh",
+                    postTitle: "In Deborah Roberts's Art, an Interrogation of What Society Imposes on Black Children"
+                },
+                post3: {
+                    publishDate: "Feb 12",
+                    readTime: 5,
+                    postAuthor: "Elan Jhosh",
+                    postTitle: "Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long"
+                },
+                post4: {
+                    publishDate: "Feb 12",
+                    readTime: 5,
+                    postAuthor: "Elan Jhosh",
+                    postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
+                }
+            }
+        }
+        
+    }
 };
 </script>
 <template>
@@ -58,16 +89,16 @@ export default {
                 </div>
                 <div class="trending__article__info">
                     <div class="trending__article__info__left">
-                        <p class="trending__article__date">Feb 11</p>
-                        <p class="trending__article__readtime">12min</p>
+                        <p class="trending__article__date">{{ TrendingPost.post1.publishDate }}</p>
+                        <p class="trending__article__readtime">{{ TrendingPost.post1.readTime }} min</p>
                     </div>
                     <div class="trending__article__info__right">
                         <p class="trending__article__author">
-                            By Elen Jhosh
+                            {{ TrendingPost.post1.postAuthor }}
                         </p>
                     </div>
                 </div>
-                <h2 class="trending__article__title">A Brit in America Makes Sense of the Meghan Markle Oprah Interview</h2>
+                <h2 class="trending__article__title">{{ TrendingPost.post1.postTitle }}</h2>
             </swiper-slide>
             <swiper-slide class="trending__article">
                     <div class="trending__article__img">
@@ -75,16 +106,16 @@ export default {
                     </div>
                     <div class="trending__article__info">
                         <div class="trending__article__info__left">
-                            <p class="trending__article__date">Feb 11</p>
-                            <p class="trending__article__readtime">12min</p>
+                            <p class="trending__article__date">{{ TrendingPost.post2.publishDate }}</p>
+                            <p class="trending__article__readtime">{{ TrendingPost.post2.readTime }} min</p>
                         </div>
                         <div class="trending__article__info__right">
                             <p class="trending__article__author">
-                                By Elen Jhosh
+                                {{ TrendingPost.post2.postAuthor }}
                             </p>
                         </div>
                     </div>
-                <h2 class="trending__article__title">In Deborah Roberts's Art, an Interrogation of What Society Imposes on Black Children</h2>
+                <h2 class="trending__article__title">{{ TrendingPost.post2.postTitle }}</h2>
 
             </swiper-slide>
             <swiper-slide class="trending__article">
@@ -93,16 +124,16 @@ export default {
                     </div>
                     <div class="trending__article__info">
                         <div class="trending__article__info__left">
-                            <p class="trending__article__date">Feb 11</p>
-                            <p class="trending__article__readtime">12min</p>
+                            <p class="trending__article__date">{{ TrendingPost.post1.publishDate }}</p>
+                            <p class="trending__article__readtime">{{ TrendingPost.post3.readTime }} min</p>
                         </div>
                         <div class="trending__article__info__right">
                             <p class="trending__article__author">
-                                By Elen Jhosh
+                                {{ TrendingPost.post3.postAuthor }}
                             </p>
                         </div>
                     </div>
-                    <h2 class="trending__article__title">Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long</h2>
+                    <h2 class="trending__article__title">{{ TrendingPost.post3.postTitle }}</h2>
             </swiper-slide>
             <swiper-slide class="trending__article">
                         <div class="trending__article__img">
@@ -110,16 +141,16 @@ export default {
                         </div>
                         <div class="trending__article__info">
                             <div class="trending__article__info__left">
-                                <p class="trending__article__date">Feb 11</p>
-                                <p class="trending__article__readtime">12min</p>
+                                <p class="trending__article__date">{{ TrendingPost.post4.publishDate }}</p>
+                                <p class="trending__article__readtime">{{ TrendingPost.post4.readTime }} min</p>
                             </div>
                             <div class="trending__article__info__right">
                                 <p class="trending__article__author">
-                                    By Elen Jhosh
+                                    {{ TrendingPost.post4.postAuthor }}
                                 </p>
                             </div>
                         </div>
-                        <h2 class="trending__article__title">Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long</h2>
+                        <h2 class="trending__article__title">{{ TrendingPost.post4.postTitle }}</h2>
                 </swiper-slide>
         </swiper>
     </article>
