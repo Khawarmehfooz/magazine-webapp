@@ -3,27 +3,30 @@ export default {
     data(){
         return {
             featuredPost: {
-                "postDate": "Feb 11",
-                "readTime":5,
-                "authorName": "Elen Jhosh",
-                "postTitle": "What Designers, Photographers, and Other Insiders Missed About Paris Fashion Week",
-                "postExcerpt": "If Paris Fashion Week in digital form has remained saturated with propositions and vision of the clothes we will be seeing- and perhaps wearing-in a few months. it's only natural to be feeling a certain wistfulness for the experience as ti used to be not so long ago."
+                postDate: "Feb 11",
+                readTime:5,
+                authorName: "Elen Jhosh",
+                img:"/images/hero-models.jpg" ,
+                postTitle: "What Designers, Photographers, and Other Insiders Missed About Paris Fashion Week",
+                postExcerpt: "If Paris Fashion Week in digital form has remained saturated with propositions and vision of the clothes we will be seeing- and perhaps wearing-in a few months. it's only natural to be feeling a certain wistfulness for the experience as ti used to be not so long ago."
             },
             sideFeaturedPostOne:{
-                "postDate": "Feb 11",
-                "readTime": 5,
-                "authorName": "Elen Jhosh",
-                "postTitle": "What Happens When One Partner Is Vaccinated and the Other Isn't?",
-                "postExcerpt": "For the moment, many people are learning to balance happiness about partner's vaccine eligibility with personal disappointment."
+                postDate: "Feb 11",
+                readTime: 5,
+                authorName: "Elen Jhosh",
+                img: "/images/hero-image-2.webp",
+                postTitle: "What Happens When One Partner Is Vaccinated and the Other Isn't?",
+                postExcerpt: "For the moment, many people are learning to balance happiness about partner's vaccine eligibility with personal disappointment."
 
             },
             sideFeaturedPostTwo:
                 {
-                    "postDate": "Feb 11",
-                    "readTime": 5,
-                    "authorName": "Elen Jhosh",
-                    "postTitle": "These Intimate Portraits Celebrate the Beauty and Versatility of Black Men's Hair",
-                    "postExcerpt": "Identity for Black men is something we have always struggled with, not because we don't understand who we are, but because of what society tries to make us out to be."
+                    postDate: "Feb 11",
+                    readTime: 5,
+                    authorName: "Elen Jhosh",
+                    img: "/images/hero-image-3.webp",
+                    postTitle: "These Intimate Portraits Celebrate the Beauty and Versatility of Black Men's Hair",
+                    postExcerpt: "Identity for Black men is something we have always struggled with, not because we don't understand who we are, but because of what society tries to make us out to be."
                 }
         }
 
@@ -34,7 +37,7 @@ export default {
 <template>
     <main>
         <article class="post col-1 span-2">
-            <img src="../assets/images/hero-models.jpg" alt="">
+            <img :src="featuredPost.img" alt="">
             <div class="post__details">
                 <div class="post__details__left">
                     <p class="post__date">{{ featuredPost.postDate }}</p>
@@ -52,7 +55,7 @@ export default {
             </p>
         </article>
         <article class="col-2">
-            <img src="../assets/images/hero-image-2.webp" alt="">
+            <img :src="sideFeaturedPostOne.img" alt="">
             <div class="post__details">
                     <div class="post__details__left">
                         <p class="post__date">{{sideFeaturedPostOne.postDate }}</p>
@@ -66,7 +69,7 @@ export default {
             <p class="side__post__excerpt">{{ sideFeaturedPostOne.postExcerpt }}</p>
         </article>
         <article class="col-3">
-            <img src="../assets/images/hero-image-3.webp" alt="">
+            <img :src="sideFeaturedPostTwo.img" alt="">
             <div class="post__details">
                     <div class="post__details__left">
                         <p class="post__date">{{ sideFeaturedPostTwo.postDate }}</p>
@@ -277,9 +280,6 @@ main{
     }
 }
 @media only screen and (max-width:380px){
-    main{
-        /* grid-template-columns: 1fr; */
-    }
     .col-2,.col-3{
         grid-column:span 2;
     }
