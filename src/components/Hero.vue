@@ -267,8 +267,23 @@ main{
 @media only screen and (max-width:600px){
     .post__details__left{
 
-        gap: 1.3rem;
+        gap: 1rem;
     }
+    .col-2 .author__name,
+    .col-3 .author__name{
+        margin-left: 0;
+        
+
+    }
+}
+@media only screen and (max-width:380px){
+    main{
+        /* grid-template-columns: 1fr; */
+    }
+    .col-2,.col-3{
+        grid-column:span 2;
+    }
+
 }
 
 
