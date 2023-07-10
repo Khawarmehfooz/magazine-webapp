@@ -147,5 +147,10 @@ export default{
         margin:3rem 0;
     }
 }
+@media only screen and (max-width:380px){
+    .latest__header__title{
+        font-size: 1.3rem;
+    }
+}
 
 </style>
