@@ -52,32 +52,6 @@ export default {
                 }
 
             ]
-            // TrendingPost: {
-            //     post1:{
-            //         publishDate: "Feb 12",
-            //         readTime: 5,
-            //         postAuthor: "Elan Jhosh",
-            //         postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
-            //     },
-            //     post2: {
-            //         publishDate: "Feb 12",
-            //         readTime: 5,
-            //         postAuthor: "Elan Jhosh",
-            //         postTitle: "In Deborah Roberts's Art, an Interrogation of What Society Imposes on Black Children"
-            //     },
-            //     post3: {
-            //         publishDate: "Feb 12",
-            //         readTime: 5,
-            //         postAuthor: "Elan Jhosh",
-            //         postTitle: "Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long"
-            //     },
-            //     post4: {
-            //         publishDate: "Feb 12",
-            //         readTime: 5,
-            //         postAuthor: "Elan Jhosh",
-            //         postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
-            //     }
-            // }
         }
         
     }
@@ -254,6 +228,11 @@ export default {
     }
     .trending__articles__grid{
         grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width:380px){
+    .trending__header__title{
+        font-size: 1.3rem;
     }
 }
 
