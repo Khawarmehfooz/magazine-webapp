@@ -21,32 +21,63 @@ export default {
     },
     data(){
         return{
-            TrendingPost: {
-                post1:{
+            trendingArticles:[
+                {
                     publishDate: "Feb 12",
                     readTime: 5,
                     postAuthor: "Elan Jhosh",
-                    postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
-                },
-                post2: {
+                    postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview",
+                    img: "../../src/assets/images/Meghan-and-Harry.jpeg"
+                }, {
                     publishDate: "Feb 12",
                     readTime: 5,
                     postAuthor: "Elan Jhosh",
-                    postTitle: "In Deborah Roberts's Art, an Interrogation of What Society Imposes on Black Children"
-                },
-                post3: {
+                    postTitle: "In Deborah Roberts's Art, an Interrogation of What Society Imposes on Black Children",
+                    img: "../../src/assets/images/Meghan-and-Harry.jpeg"
+
+                }, {
                     publishDate: "Feb 12",
                     readTime: 5,
                     postAuthor: "Elan Jhosh",
-                    postTitle: "Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long"
-                },
-                post4: {
+                    postTitle: "Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long",
+                    img: "../../src/assets/images/Meghan-and-Harry.jpeg"
+
+                }, {
                     publishDate: "Feb 12",
                     readTime: 5,
                     postAuthor: "Elan Jhosh",
-                    postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
+                    postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview",
+                    img: "../../src/assets/images/Meghan-and-Harry.jpeg"
+
                 }
-            }
+
+            ]
+            // TrendingPost: {
+            //     post1:{
+            //         publishDate: "Feb 12",
+            //         readTime: 5,
+            //         postAuthor: "Elan Jhosh",
+            //         postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
+            //     },
+            //     post2: {
+            //         publishDate: "Feb 12",
+            //         readTime: 5,
+            //         postAuthor: "Elan Jhosh",
+            //         postTitle: "In Deborah Roberts's Art, an Interrogation of What Society Imposes on Black Children"
+            //     },
+            //     post3: {
+            //         publishDate: "Feb 12",
+            //         readTime: 5,
+            //         postAuthor: "Elan Jhosh",
+            //         postTitle: "Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long"
+            //     },
+            //     post4: {
+            //         publishDate: "Feb 12",
+            //         readTime: 5,
+            //         postAuthor: "Elan Jhosh",
+            //         postTitle: "A Brit in America Makes Sense of the Meghan Markle Oprah Interview"
+            //     }
+            // }
         }
         
     }
@@ -83,75 +114,23 @@ export default {
         }" 
         :modules="modules" 
         class="mySwiper trending__articles__grid">
-            <swiper-slide class="trending__article">
+            <swiper-slide class="trending__article" v-for="trendingArticle in trendingArticles">
                 <div class="trending__article__img">
-                    <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
+                    <img :src="trendingArticle.img" alt="">
                 </div>
                 <div class="trending__article__info">
                     <div class="trending__article__info__left">
-                        <p class="trending__article__date">{{ TrendingPost.post1.publishDate }}</p>
-                        <p class="trending__article__readtime">{{ TrendingPost.post1.readTime }} min</p>
+                        <p class="trending__article__date">{{ trendingArticle.publishDate }}</p>
+                        <p class="trending__article__readtime">{{ trendingArticle.readTime }} min</p>
                     </div>
                     <div class="trending__article__info__right">
                         <p class="trending__article__author">
-                            {{ TrendingPost.post1.postAuthor }}
+                            {{ trendingArticle.postAuthor }}
                         </p>
                     </div>
                 </div>
-                <h2 class="trending__article__title">{{ TrendingPost.post1.postTitle }}</h2>
+                <h2 class="trending__article__title">{{ trendingArticle.postTitle }}</h2>
             </swiper-slide>
-            <swiper-slide class="trending__article">
-                    <div class="trending__article__img">
-                        <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
-                    </div>
-                    <div class="trending__article__info">
-                        <div class="trending__article__info__left">
-                            <p class="trending__article__date">{{ TrendingPost.post2.publishDate }}</p>
-                            <p class="trending__article__readtime">{{ TrendingPost.post2.readTime }} min</p>
-                        </div>
-                        <div class="trending__article__info__right">
-                            <p class="trending__article__author">
-                                {{ TrendingPost.post2.postAuthor }}
-                            </p>
-                        </div>
-                    </div>
-                <h2 class="trending__article__title">{{ TrendingPost.post2.postTitle }}</h2>
-
-            </swiper-slide>
-            <swiper-slide class="trending__article">
-                    <div class="trending__article__img">
-                        <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
-                    </div>
-                    <div class="trending__article__info">
-                        <div class="trending__article__info__left">
-                            <p class="trending__article__date">{{ TrendingPost.post1.publishDate }}</p>
-                            <p class="trending__article__readtime">{{ TrendingPost.post3.readTime }} min</p>
-                        </div>
-                        <div class="trending__article__info__right">
-                            <p class="trending__article__author">
-                                {{ TrendingPost.post3.postAuthor }}
-                            </p>
-                        </div>
-                    </div>
-                    <h2 class="trending__article__title">{{ TrendingPost.post3.postTitle }}</h2>
-            </swiper-slide>
-            <swiper-slide class="trending__article">
-                        <div class="trending__article__img">
-                            <img src="../assets/images/Meghan-and-Harry.jpeg" alt="">
-                        </div>
-                        <div class="trending__article__info">
-                            <div class="trending__article__info__left">
-                                <p class="trending__article__date">{{ TrendingPost.post4.publishDate }}</p>
-                                <p class="trending__article__readtime">{{ TrendingPost.post4.readTime }} min</p>
-                            </div>
-                            <div class="trending__article__info__right">
-                                <p class="trending__article__author">
-                                    {{ TrendingPost.post4.postAuthor }}
-                                </p>
-                            </div>
-                        </div>
-                        <h2 class="trending__article__title">{{ TrendingPost.post4.postTitle }}</h2>
-                </swiper-slide>
         </swiper>
     </article>
 
