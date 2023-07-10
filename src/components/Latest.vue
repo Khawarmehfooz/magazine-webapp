@@ -7,28 +7,28 @@ export default{
                     articleTitle: "The Definitive Helmut Newton Photobook is Reissued-in Miniature-for His 100th Birthday",
                     articleExcerpt: "The Photographer, whose provocative work rose to prominence in the 1970s against a backdrop of the second-wave feminist movement, was one of the most impactful visual creators of his time.",
                     articleAuthor: "Elen Jhosh",
-                    articleImage:"../../src/assets/images/Meghan-and-Harry.jpeg",
+                    articleImage:"/images/Meghan-and-Harry.jpeg",
                     articleDate: "Feb 12"
                 },
                 {
                     articleTitle: "Made You Look: A True Story About Fake Art - When Working to Believe Is Just Not Enought",
                     articleExcerpt: "The story of the most significant art fraud in history where ruined reputations and wounded egos mattered more than money.",
                     articleAuthor: "Elen Jhosh",
-                    articleImage: "../../src/assets/images/Meghan-and-Harry.jpeg",
+                    articleImage: "/images/Meghan-and-Harry.jpeg",
                     articleDate: "Feb 12"
                 },
                 {
                     articleTitle: "5 Things White People Keep Getting Totally Wrong About Racism",
                     articleExcerpt: "They want to escape the harsh, unforgiving glare of culpability by pretending they've done nothing wrong, that if there are ongoing issues with racism in this country, it has nothing to do with how they raise their children. It's because black people refuse to move on.",
                     articleAuthor: "Elen Jhosh",
-                    articleImage: "../../src/assets/images/Meghan-and-Harry.jpeg",
+                    articleImage: "/images/Meghan-and-Harry.jpeg",
                     articleDate: "Feb 12"
                 },
                 {
                     articleTitle: "In London, the Most Famous \"Great Women Artist\" Finally Gets Her Due",
                     articleExcerpt: "In July 2018, London's National Gallery Acquired a self-portrait by the Baroque artist Artemisia Gentileschi, featuring the painter in the guise of Sait Catherine of Alexandria. Almost immediately, it drew an unpresedented level of media attention.",
                     articleAuthor: "Elen Jhosh",
-                    articleImage: "../../src/assets/images/Meghan-and-Harry.jpeg",
+                    articleImage: "/images/Meghan-and-Harry.jpeg",
                     articleDate: "Feb 12"
                 }
             ]
@@ -45,7 +45,6 @@ export default{
         <article v-for="latestArticle in latestArticles" class="latest__article">
             <figure>
                 <img class="article__img" :src="latestArticle.articleImage" alt="">
-                <!-- <img src="../../src/assets/images/Meghan-and-Harry.jpeg" alt=""> -->
             </figure>
             <div class="latest__article__content">
                 <div class="article__author">
