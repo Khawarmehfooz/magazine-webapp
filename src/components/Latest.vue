@@ -58,7 +58,6 @@ export default{
 </template>
 <style scoped>
 .latest__articles{
-    border-bottom: 1px solid grey;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
 
