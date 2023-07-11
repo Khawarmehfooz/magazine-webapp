@@ -106,6 +106,11 @@ export default {
     </article>
 </template>
 <style scoped>
+.best-seller{
+    margin-bottom: 5rem;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3rem;
+}
 .best-seller__header {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
@@ -222,7 +227,7 @@ swiper-slide {
     }
 
     .best-seller__book__title {
-        font-size: 1.2rem;
+        font-size: 1.18rem;
     }
 
     .best-seller__books__grid {
@@ -232,6 +237,6 @@ swiper-slide {
 
 @media only screen and (max-width:380px) {
     .best-seller__header__title {
-        font-size: 1.3rem;
+        font-size: 1.15rem;
     }
 }</style>
