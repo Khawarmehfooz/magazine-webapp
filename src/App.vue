@@ -5,6 +5,7 @@ import Trending from './components/Trending.vue';
 import Latest from './components/Latest.vue';
 import BestSeller from './components/BestSeller.vue';
 import LatestPodcasts from './components/LatestPodcasts.vue';
+import NewsletterForm from './components/NewsletterForm.vue'
 
 </script>
 
@@ -15,6 +16,7 @@ import LatestPodcasts from './components/LatestPodcasts.vue';
   <Latest/>
   <BestSeller/>
   <LatestPodcasts/>
+  <NewsletterForm/>
 
 </template>
 
