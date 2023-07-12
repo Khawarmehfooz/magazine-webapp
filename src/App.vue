@@ -4,6 +4,7 @@ import Hero from './components/Hero.vue';
 import Trending from './components/Trending.vue';
 import Latest from './components/Latest.vue';
 import BestSeller from './components/BestSeller.vue';
+import LatestPodcasts from './components/LatestPodcasts.vue';
 
 </script>
 
@@ -13,6 +14,7 @@ import BestSeller from './components/BestSeller.vue';
   <Trending/>
   <Latest/>
   <BestSeller/>
+  <LatestPodcasts/>
 
 </template>
 
