@@ -144,6 +144,14 @@ input[type="submit"]{
     ,.footer__list li{
         text-align: center;
     }
+    .footer__bottom{
+        flex-direction: column;
+    }
+    .footer__bottom--right{
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
 }
 
 </style>
