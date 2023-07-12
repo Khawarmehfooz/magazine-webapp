@@ -108,7 +108,6 @@ export default {
 <style scoped>
 .best-seller{
     margin-bottom: 5rem;
-    border-bottom: 1px solid grey;
     padding-bottom: 3rem;
 }
 .best-seller__header {
@@ -222,6 +221,9 @@ swiper-slide {
 }
 
 @media only screen and (max-width:766px) {
+    .best-seller{
+        padding-bottom: 0;
+    }
     .best-seller__header {
         margin: 2rem 0;
         justify-content: center;
