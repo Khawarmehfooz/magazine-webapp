@@ -222,6 +222,10 @@ export default {
 @media only screen and (max-width:766px){
     .trending__header{
         margin:2rem 0;
+        justify-content: center;
+    }
+    .trending__header a{
+        display: none;
     }
     .trending__article__title{
         font-size: 1.2rem;
