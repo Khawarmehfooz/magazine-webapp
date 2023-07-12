@@ -224,6 +224,10 @@ swiper-slide {
 @media only screen and (max-width:766px) {
     .best-seller__header {
         margin: 2rem 0;
+        justify-content: center;
+    }
+    .best-seller__header a{
+        display: none;
     }
 
     .best-seller__book__title {
