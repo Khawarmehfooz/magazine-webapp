@@ -134,6 +134,9 @@ export default{
 
 }
 @media only screen and (max-width:766px){
+    .latest__header a{
+        display: none;
+    }
     .latest__article{
         grid-template-columns: 1fr;
     }
@@ -143,6 +146,7 @@ export default{
     }
     .latest__header{
         margin:3rem 0;
+        justify-content: center;
     }
 }
 @media only screen and (max-width:380px){
