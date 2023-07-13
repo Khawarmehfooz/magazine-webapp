@@ -7,10 +7,7 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Podcasts from './views/Podcasts.vue'
 import Books from './views/Books.vue'
-
-
-
-
+import Blog from './views/Blog.vue'
 
 const router = createRouter( {
     history: createWebHistory(),
@@ -34,6 +31,11 @@ const router = createRouter( {
             path: '/books',
             name: 'Books',
             component: Books
+        },
+        {
+            path: '/blog',
+            name: 'Blog',
+            component: Blog
         }
     ]
 })
