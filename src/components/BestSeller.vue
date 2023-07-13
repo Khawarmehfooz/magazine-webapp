@@ -25,25 +25,25 @@ export default {
                 {
                     bookAuthor: "Halsey Street",
                     bookTitle: "What's Mine and Yours",
-                    img: "/images/Meghan-and-Harry.jpeg",
+                    img: "/images/Whats-Mine-and-Yours.jpg",
                     price: 14.99
 
                 }, {
                     bookAuthor: "Viet Thanh Nguyen",
                     bookTitle: "The Committed: A Novel",
-                    img: "/images/Meghan-and-Harry.jpeg",
+                    img: "/images/The_Committed.png",
                     price: 10.39
 
                 }, {
                     bookAuthor: "Julia Cooke",
                     bookTitle: "Come Fly the World: Stories",
-                    img: "/images/Meghan-and-Harry.jpeg",
+                    img: "/images/come-fly-the-world.jpg",
                     price: 23.49
 
                 }, {
                     bookAuthor: "Kazuo Ishiguro",
                     bookTitle: "Klara and the Sun: A novel",
-                    img: "/images/Meghan-and-Harry.jpeg",
+                    img: "/images/Klara and the Sun.jpg",
                     price: 12.99
 
                 }, {
@@ -90,7 +90,7 @@ export default {
 }" :modules="modules" class="mySwiper best-seller__books__grid">
             <swiper-slide class="best-seller__book" v-for="bestsellerBook in bestsellerBooks">
                 <div class="best-seller__img">
-                    <img :src="bestsellerBook.img" alt="">
+                    <img loading="lazy" :src="bestsellerBook.img" alt="">
                 </div>
                 <div class="best-seller__book__info">
                     <div class="best-seller__book__info__right">
@@ -149,7 +149,7 @@ export default {
 }
 .best-seller__img img{
     height: 350px;
-    object-fit: cover;
+    object-fit: contain;
     aspect-ratio: 4/3;
 }
 

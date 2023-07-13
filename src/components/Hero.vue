@@ -37,7 +37,7 @@ export default {
 <template>
     <main>
         <article class="post col-1 span-2">
-            <img :src="featuredPost.img" alt="">
+            <img loading="lazy" :src="featuredPost.img" alt="">
             <div class="post__details">
                 <div class="post__details__left">
                     <p class="post__date">{{ featuredPost.postDate }}</p>
@@ -55,7 +55,7 @@ export default {
             </p>
         </article>
         <article class="col-2">
-            <img :src="sideFeaturedPostOne.img" alt="">
+            <img loading="lazy" :src="sideFeaturedPostOne.img" alt="">
             <div class="post__details">
                     <div class="post__details__left">
                         <p class="post__date">{{sideFeaturedPostOne.postDate }}</p>
@@ -69,7 +69,7 @@ export default {
             <p class="side__post__excerpt">{{ sideFeaturedPostOne.postExcerpt }}</p>
         </article>
         <article class="col-3">
-            <img :src="sideFeaturedPostTwo.img" alt="">
+            <img loading="lazy" :src="sideFeaturedPostTwo.img" alt="">
             <div class="post__details">
                     <div class="post__details__left">
                         <p class="post__date">{{ sideFeaturedPostTwo.postDate }}</p>

@@ -33,14 +33,14 @@ export default {
                     readTime: 5,
                     postAuthor: "Elan Jhosh",
                     postTitle: "In Deborah Roberts's Art, an Interrogation of What Society Imposes on Black Children",
-                    img: "/images/Meghan-and-Harry.jpeg"
+                    img: "/images/deborah-robert-art.png"
 
                 }, {
                     publishDate: "Feb 12",
                     readTime: 5,
                     postAuthor: "Elan Jhosh",
                     postTitle: "Spring Sirts Have Sprung - 6 Ways to Wear Them All Season Long",
-                    img: "/images/Meghan-and-Harry.jpeg"
+                    img: "/images/spring-dresses.webp"
 
                 }, {
                     publishDate: "Feb 12",
@@ -90,7 +90,7 @@ export default {
         class="mySwiper trending__articles__grid">
             <swiper-slide class="trending__article" v-for="trendingArticle in trendingArticles">
                 <div class="trending__article__img">
-                    <img :src="trendingArticle.img" alt="">
+                    <img loading="lazy" :src="trendingArticle.img" alt="">
                 </div>
                 <div class="trending__article__info">
                     <div class="trending__article__info__left">
@@ -142,7 +142,7 @@ export default {
     gap: 2rem;
 }
 .trending__article__img img{
-    aspect-ratio: 1;
+    aspect-ratio: 4/3;
     object-fit: cover;
 }
 .trending__article__info{

@@ -7,21 +7,21 @@ export default {
                     podcastTitle: "How are the boundaries between masculine and femine being erased in fashion?",
                     podcastExcerpt: "Today, you will not surprise anyone with pale pink shades of clothing in the men's department. Men in dresses appear on the red carpets, and big brands like Chanel are launching lines of men's makeup.",
                     podcastAuthor: "Elen Jhosh",
-                    podcastImage: "/images/Meghan-and-Harry.jpeg",
+                    podcastImage: "/images/podcast-1.png",
                     podcastDate: "Feb 12"
                 },
                 {
                     podcastTitle: "What is the essence of Gandhi's philosophy?",
                     podcastExcerpt: "It so happes that a proper name becomes a household name. This happened with the name of Mahatma Gandhi. Neither before nor after him was there such a person who could so successfully combine philosophy and politics.",
                     podcastAuthor: "Elen Jhosh",
-                    podcastImage: "/images/Meghan-and-Harry.jpeg",
+                    podcastImage: "/images/mahatma-gandhi.webp",
                     podcastDate: "Feb 12"
                 },
                 {
                     podcastTitle: "What is the tragedy behind Vrubel's paintings?",
                     podcastExcerpt: "The work of mikhail  Vrubel(1856-1910) became the quintessence of the era in which he lived - a turning point, full of contradictions and collisions.",
                     podcastAuthor: "Elen Jhosh",
-                    podcastImage: "/images/Meghan-and-Harry.jpeg",
+                    podcastImage: "/images/vrubal.jpg",
                     podcastDate: "Feb 12"
                 }
             ]
@@ -37,7 +37,7 @@ export default {
         </div>
         <article v-for="latestPodcast in latestPodcasts" class="latest__podcast">
             <figure>
-                <img class="podcast__img" :src="latestPodcast.podcastImage" alt="">
+                <img loading="lazy" class="podcast__img" :src="latestPodcast.podcastImage" alt="">
             </figure>
             <div class="latest__podcast__content">
                 <div class="podcast__author">
