@@ -3,11 +3,11 @@ export default {
     data(){
         return{
             navigations:{
-                "Home": "#",
-                "Blog": "#",
-                "Podcasts": "#",
-                "Books": "#",
-                "About":"#",
+                "Home": "/",
+                "Blog": "/blog",
+                "Podcasts": "/podcasts",
+                "Books": "/books",
+                "About":"/about",
             },
             isActive:false,
             isHidden:false
@@ -29,7 +29,7 @@ export default {
             <h1>Magazine</h1>
         </div>
         <ul class="nav__items" :class="{active: isActive}">
-            <li v-for="(link,navigation,index) in navigations" class="nav__item"><a :href="link" class="nav__link">{{ navigation }}</a></li>
+            <router-link v-for="(link,navigation,index) in navigations" :to="link" class="nav__item">{{ navigation }}</router-link>
         </ul>
         <div class="user__account">
             <i class="fas fa-bag-shopping fa-xl"></i>
